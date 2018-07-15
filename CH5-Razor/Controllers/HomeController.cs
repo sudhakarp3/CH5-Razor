@@ -21,6 +21,20 @@ namespace CH5_Razor.Controllers
         {
             return View(myProduct);
         }
+        public ActionResult NameAndPrice()
+        {
+            return View(myProduct);
+        }
+        public ActionResult DemoExpression()
+        {
+
+            ViewBag.ProductCount = 0;
+            ViewBag.ExpressShip = true;
+            ViewBag.ApplyDiscount = false;
+            ViewBag.Supplier = null;
+            return View(myProduct);
+
+        }
 
         public ActionResult About()
         {
